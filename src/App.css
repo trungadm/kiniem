@@ -1,0 +1,385 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #12070d;
+  color: white;
+}
+
+.app {
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* =========================
+   TRANG ĐẦU
+========================= */
+
+.welcome {
+  min-height: 100vh;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url("/images/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  position: relative;
+
+  padding: 30px;
+}
+
+.welcome::before {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.welcome-content {
+  width: 100%;
+  max-width: 500px;
+
+  text-align: center;
+
+  position: relative;
+  z-index: 1;
+
+  padding: 35px;
+
+  border-radius: 25px;
+
+  background: rgba(0, 0, 0, 0.30);
+
+  backdrop-filter: blur(5px);
+}
+
+.welcome h1 {
+  font-size: 32px;
+
+  margin-bottom: 20px;
+}
+
+.welcome p {
+  color: white;
+
+  line-height: 1.7;
+}
+
+/* =========================
+   TRANG DỪNG
+========================= */
+
+.stop-page {
+  width: 100%;
+  max-width: 500px;
+
+  min-height: 100vh;
+
+  margin: auto;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  align-items: center;
+
+  text-align: center;
+
+  padding: 30px;
+
+  background: linear-gradient(
+    135deg,
+    #160810,
+    #3a1425,
+    #12070d
+  );
+}
+
+/* =========================
+   TRANG KỶ NIỆM
+========================= */
+
+.memories {
+  width: 100%;
+  max-width: 500px;
+
+  min-height: 100vh;
+
+  margin: auto;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  text-align: center;
+
+  padding: 30px;
+
+  background: linear-gradient(
+    135deg,
+    #160810,
+    #3a1425,
+    #12070d
+  );
+}
+
+.memories h1 {
+  font-size: 30px;
+
+  margin-bottom: 10px;
+}
+
+.heart-small {
+  font-size: 30px;
+
+  margin-bottom: 20px;
+}
+
+/* =========================
+   ẢNH KỶ NIỆM
+========================= */
+
+.memory-card {
+  background: rgba(255, 255, 255, 0.08);
+
+  border-radius: 20px;
+
+  overflow: hidden;
+
+  box-shadow:
+    0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+.memory-card img {
+  width: 100%;
+
+  height: 500px;
+
+  display: block;
+
+  object-fit: cover;
+}
+
+.memory-content {
+  padding: 20px;
+}
+
+.memory-content h2 {
+  margin-top: 0;
+
+  color: #ff7fa3;
+}
+
+.memory-content p {
+  font-size: 17px;
+
+  line-height: 1.7;
+}
+
+/* =========================
+   NÚT QUAY LẠI
+========================= */
+
+.back-button {
+  align-self: flex-start;
+
+  background: transparent;
+
+  color: #aaa;
+
+  border: 1px solid #555;
+
+  margin-bottom: 20px;
+}
+
+.back-button:hover {
+  color: white;
+
+  border-color: #ff4f81;
+}
+
+/* =========================
+   SỐ ẢNH
+========================= */
+
+.counter {
+  margin-top: 20px;
+
+  color: #aaa;
+}
+
+/* =========================
+   NÚT CHUYỂN ẢNH
+========================= */
+
+.navigation {
+  display: flex;
+
+  justify-content: center;
+
+  gap: 15px;
+
+  margin-top: 20px;
+}
+
+.navigation button {
+  background: #ff4f81;
+
+  color: white;
+
+  min-width: 110px;
+}
+
+.navigation button:disabled {
+  background: #555;
+
+  cursor: not-allowed;
+
+  transform: none;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.buttons {
+  display: flex;
+
+  justify-content: center;
+
+  gap: 15px;
+
+  margin-top: 30px;
+
+  flex-wrap: wrap;
+}
+
+button {
+  border: none;
+
+  padding: 14px 25px;
+
+  border-radius: 30px;
+
+  font-size: 15px;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+.continue {
+  background: #ff4f81;
+
+  color: white;
+}
+
+.stop {
+  background: #333;
+
+  color: white;
+}
+
+/* =========================
+   ICON TRÁI TIM
+========================= */
+
+.heart {
+  font-size: 80px;
+
+  margin-bottom: 20px;
+}
+
+/* =========================
+   TRANG CUỐI
+========================= */
+
+.final {
+  width: 100%;
+  max-width: 500px;
+
+  min-height: 100vh;
+
+  margin: auto;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  align-items: center;
+
+  text-align: center;
+
+  padding: 30px;
+
+  background: linear-gradient(
+    135deg,
+    #160810,
+    #3a1425,
+    #12070d
+  );
+}
+
+.final p {
+  font-size: 17px;
+
+  line-height: 1.7;
+
+  color: #ddd;
+}
+
+.final h2 {
+  font-weight: normal;
+
+  margin: 30px 0;
+
+  color: #ff8baa;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+  .welcome h1,
+  .stop-page h1,
+  .final h1,
+  .memories h1 {
+    font-size: 25px;
+  }
+
+  .welcome-content {
+    padding: 25px 20px;
+  }
+
+  .memory-card img {
+    height: 430px;
+  }
+
+  .heart {
+    font-size: 65px;
+  }
+
+}
