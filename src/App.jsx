@@ -1,6 +1,7 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Kiniem from "./kiniem";
 import "./App.css";
+
 
 const memories = [
   {
@@ -27,7 +28,32 @@ const memories = [
     image: "/images/5.jpg",
     title: "Cùng nhau",
     note: " vẫn là đi xem phim thôi nhưng không còn ngại nhữaaaa, lúc này anh đã yêu em lắm ròi, mê như điếu đổ👉👈."
-  }
+  },
+  {
+    video: "/videos/1.mp4",
+    title: "Dạo chơi",
+    note: " dù có đi đâu chỉ cần nghĩ về nhau ."
+  },
+  {
+  image: "/images/2.jpg",
+  title: "",
+  note: "Có những ngày chẳng có gì đặc biệt, nhưng vì có nhau nên lại trở nên đáng nhớ..."
+},
+{
+  image: "/images/2.jpg",
+  title: "Một ngày bình thường",
+  note: "Có những ngày chẳng có gì đặc biệt, nhưng vì có nhau nên lại trở nên đáng nhớ..."
+},
+{
+  image: "/images/2.jpg",
+  title: "Một ngày bình thường",
+  note: "Có những ngày chẳng có gì đặc biệt, nhưng vì có nhau nên lại trở nên đáng nhớ..."
+},
+{
+  image: "/images/2.jpg",
+  title: "Một ngày bình thường",
+  note: "Có những ngày chẳng có gì đặc biệt, nhưng vì có nhau nên lại trở nên đáng nhớ..."
+},
 ];
 
 function App() {
@@ -68,15 +94,15 @@ function App() {
             </div>
 
             <h1>
-              Có một điều muốn gửi đến bạn...
+              Gửi em người mà anh luôn yêu thương...
             </h1>
 
             <p>
-              Đây là một món quà nhỏ dành cho bạn.
+              Đây là một món quà nhỏ anh dành tặng em, cũng có thể đây là lần cuối cùng anh tặng em.
             </p>
 
             <p>
-              Bạn có muốn mở nó không?
+              Em có muốn mở nó không?
             </p>
 
             <div className="buttons">
@@ -85,14 +111,14 @@ function App() {
                 className="continue"
                 onClick={() => setPage("memories")}
               >
-                💗 TIẾP TỤC
+                💗 Em có^^
               </button>
 
               <button
                 className="stop"
                 onClick={() => setPage("stop")}
               >
-                🚪 DỪNG LẠI
+                🚪 Em không -.-
               </button>
 
             </div>
@@ -111,12 +137,12 @@ function App() {
             
           </div>
 
-          <h2>
+          <h3>
             ô citt ai cho bấm vào đây 
-          </h2>
+          </h3>
 
           <p>
-            Tôi đã chuẩn bị rất lâu đấy...
+            Anh đã chuẩn bị rất lâu đấy...
           </p>
 
           <div className="buttons">
@@ -125,7 +151,7 @@ function App() {
               className="continue"
               onClick={() => setPage("memories")}
             >
-              Thôi được, cho tôi xem 🥺
+              Thôi được, cho em xem đi🥺
             </button>
 
             <button

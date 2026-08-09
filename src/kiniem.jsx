@@ -1,3 +1,4 @@
+
 function Kiniem({
   memories,
   current,
@@ -5,6 +6,8 @@ function Kiniem({
   previousMemory,
   goHome
 }) {
+  const memory = memories[current];
+
   return (
     <div className="memories">
 
@@ -25,19 +28,29 @@ function Kiniem({
 
       <div className="memory-card">
 
-        <img
-          src={memories[current].image}
-          alt={memories[current].title}
-        />
+        {memory.image && (
+          <img
+            src={memory.image}
+            alt={memory.title}
+          />
+        )}
+
+        {memory.video && (
+          <video
+            src={memory.video}
+            controls
+            playsInline
+          />
+        )}
 
         <div className="memory-content">
 
           <h2>
-            {memories[current].title}
+            {memory.title}
           </h2>
 
           <p>
-            {memories[current].note}
+            {memory.note}
           </p>
 
         </div>

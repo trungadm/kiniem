@@ -109,3 +109,27 @@ code {
   padding: 4px 8px;
   background: var(--code-bg);
 }
+/* =========================
+   NOTE DÀI - KHÔNG CHE TITLE
+========================= */
+
+.note {
+  max-height: 110px;
+  overflow-y: auto;
+  line-height: 1.5;
+  padding-right: 6px;
+  box-sizing: border-box;
+}
+
+/* Thanh cuộn nhỏ gọn */
+.note::-webkit-scrollbar {
+  width: 4px;
+}
+
+.note::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+}
+
+.note::-webkit-scrollbar-track {
+  background: transparent;
+}
