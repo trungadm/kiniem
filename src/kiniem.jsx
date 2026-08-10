@@ -66,6 +66,7 @@ function Kiniem({
         )}
 
         <div className="memory-content">
+
           {memory.title && (
             <h2>
               {memory.title}
@@ -75,6 +76,7 @@ function Kiniem({
           <p>
             {memory.note}
           </p>
+
         </div>
 
       </div>
