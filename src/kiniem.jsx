@@ -12,9 +12,15 @@ function Kiniem({
   return (
     <div className="memories">
 
-      {/* =========================
-          QUAY LẠI
-      ========================= */}
+      <div className="floating-hearts">
+        {Array.from({ length: 27 }, (_, i) => (
+          <img
+            key={i}
+            src={`/images/${i + 20}.jpg`}
+            alt=""
+          />
+        ))}
+      </div>
 
       <button
         className="back-button"
@@ -22,10 +28,6 @@ function Kiniem({
       >
         ← Quay lại
       </button>
-
-      {/* =========================
-          TIÊU ĐỀ
-      ========================= */}
 
       <h1>
         Câu chuyện của chúng ta
@@ -35,55 +37,35 @@ function Kiniem({
         ❤️
       </div>
 
-      {/* =========================
-          CARD
-      ========================= */}
-
       <div className="memory-card">
-
-        {/* ẢNH */}
 
         {memory.image && (
           <img
             src={memory.image}
-            alt={memory.title}
+            alt={memory.title || ""}
           />
         )}
-
-        {/* VIDEO */}
 
         {memory.video && (
           <video
             src={memory.video}
             controls
             playsInline
-
             onPlay={() => {
-              // Video bắt đầu
-              // Nhạc dừng đúng vị trí hiện tại
               setVideoPlaying(true);
             }}
-
             onPause={() => {
-              // Video pause
-              // Nhạc tiếp tục từ đúng vị trí đã dừng
               setVideoPlaying(false);
               startMusic();
             }}
-
             onEnded={() => {
-              // Video hết
-              // Nhạc tiếp tục từ đúng vị trí đã dừng
               setVideoPlaying(false);
               startMusic();
             }}
           />
         )}
 
-        {/* NỘI DUNG */}
-
         <div className="memory-content">
-
           {memory.title && (
             <h2>
               {memory.title}
@@ -93,22 +75,13 @@ function Kiniem({
           <p>
             {memory.note}
           </p>
-
         </div>
 
       </div>
 
-      {/* =========================
-          SỐ KỶ NIỆM
-      ========================= */}
-
       <div className="counter">
         {current + 1} / {memories.length}
       </div>
-
-      {/* =========================
-          NÚT CHUYỂN
-      ========================= */}
 
       <div className="navigation">
 
