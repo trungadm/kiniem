@@ -29,18 +29,15 @@ function Kiniem({
         ← Quay lại
       </button>
 
-      <h1>
-        Câu chuyện của chúng ta
-      </h1>
+      <h1>Câu chuyện của chúng ta</h1>
 
-      <div className="heart-small">
-        ❤️
-      </div>
+      <div className="heart-small">❤️</div>
 
       <div className="memory-card">
 
         {memory.image && (
           <img
+            className="memory-image"
             src={memory.image}
             alt={memory.title || ""}
           />
@@ -66,17 +63,11 @@ function Kiniem({
         )}
 
         <div className="memory-content">
-
           {memory.title && (
-            <h2>
-              {memory.title}
-            </h2>
+            <h2>{memory.title}</h2>
           )}
 
-          <p>
-            {memory.note}
-          </p>
-
+          <p>{memory.note}</p>
         </div>
 
       </div>
@@ -94,9 +85,7 @@ function Kiniem({
           ←
         </button>
 
-        <button
-          onClick={nextMemory}
-        >
+        <button onClick={nextMemory}>
           {current === memories.length - 1
             ? "Kết thúc ❤️"
             : "Tiếp theo →"}
