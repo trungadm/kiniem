@@ -804,6 +804,11 @@ button:hover {
     font-size: 60px;
   }
 }
+.memories {
+  position: relative;
+  z-index: 1;
+}
+
 .floating-hearts {
   position: fixed;
   inset: 0;
@@ -811,175 +816,208 @@ button:hover {
   height: 100%;
   pointer-events: none;
   overflow: hidden;
-  z-index: 5;
+  z-index: 0;
 }
 
 .floating-hearts img {
   position: absolute;
-
-  width: 70px;
-  height: 70px;
-
+  width: 65px;
+  height: 65px;
   object-fit: cover;
-
   border-radius: 15px;
-
   opacity: 1;
-
   filter: none;
-
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-
   animation: floatingImage 10s linear infinite;
 }
 
+.memories > *:not(.floating-hearts) {
+  position: relative;
+  z-index: 2;
+}
+
 .floating-hearts img:nth-child(1) {
-  left: 5%;
+  left: 3%;
+  top: 15%;
   animation-delay: 0s;
 }
 
 .floating-hearts img:nth-child(2) {
-  left: 15%;
+  left: 88%;
+  top: 20%;
   animation-delay: 1s;
 }
 
 .floating-hearts img:nth-child(3) {
-  left: 25%;
+  left: 5%;
+  top: 40%;
   animation-delay: 2s;
 }
 
 .floating-hearts img:nth-child(4) {
-  left: 35%;
+  left: 90%;
+  top: 45%;
   animation-delay: 3s;
 }
 
 .floating-hearts img:nth-child(5) {
-  left: 45%;
+  left: 2%;
+  top: 70%;
   animation-delay: 4s;
 }
 
 .floating-hearts img:nth-child(6) {
-  left: 55%;
+  left: 88%;
+  top: 75%;
   animation-delay: 5s;
 }
 
 .floating-hearts img:nth-child(7) {
-  left: 65%;
+  left: 7%;
+  top: 25%;
   animation-delay: 6s;
 }
 
 .floating-hearts img:nth-child(8) {
-  left: 75%;
+  left: 85%;
+  top: 30%;
   animation-delay: 7s;
 }
 
 .floating-hearts img:nth-child(9) {
-  left: 85%;
+  left: 4%;
+  top: 55%;
   animation-delay: 8s;
 }
 
 .floating-hearts img:nth-child(10) {
-  left: 10%;
-  animation-delay: 2s;
+  left: 90%;
+  top: 60%;
+  animation-delay: 9s;
 }
 
 .floating-hearts img:nth-child(11) {
-  left: 30%;
-  animation-delay: 4s;
+  left: 1%;
+  top: 85%;
+  animation-delay: 2s;
 }
 
 .floating-hearts img:nth-child(12) {
-  left: 50%;
-  animation-delay: 6s;
-}
-
-.floating-hearts img:nth-child(13) {
-  left: 70%;
-  animation-delay: 8s;
-}
-
-.floating-hearts img:nth-child(14) {
-  left: 90%;
-  animation-delay: 1s;
-}
-
-.floating-hearts img:nth-child(15) {
-  left: 20%;
+  left: 87%;
+  top: 90%;
   animation-delay: 3s;
 }
 
-.floating-hearts img:nth-child(16) {
-  left: 40%;
+.floating-hearts img:nth-child(13) {
+  left: 8%;
+  top: 10%;
+  animation-delay: 4s;
+}
+
+.floating-hearts img:nth-child(14) {
+  left: 86%;
+  top: 12%;
   animation-delay: 5s;
 }
 
-.floating-hearts img:nth-child(17) {
-  left: 60%;
+.floating-hearts img:nth-child(15) {
+  left: 2%;
+  top: 32%;
+  animation-delay: 6s;
+}
+
+.floating-hearts img:nth-child(16) {
+  left: 89%;
+  top: 35%;
   animation-delay: 7s;
 }
 
+.floating-hearts img:nth-child(17) {
+  left: 6%;
+  top: 50%;
+  animation-delay: 8s;
+}
+
 .floating-hearts img:nth-child(18) {
-  left: 80%;
+  left: 91%;
+  top: 52%;
   animation-delay: 9s;
 }
 
 .floating-hearts img:nth-child(19) {
-  left: 12%;
+  left: 3%;
+  top: 65%;
   animation-delay: 1s;
 }
 
 .floating-hearts img:nth-child(20) {
-  left: 28%;
-  animation-delay: 3s;
-}
-
-.floating-hearts img:nth-child(21) {
-  left: 44%;
-  animation-delay: 5s;
-}
-
-.floating-hearts img:nth-child(22) {
-  left: 60%;
-  animation-delay: 7s;
-}
-
-.floating-hearts img:nth-child(23) {
-  left: 76%;
-  animation-delay: 9s;
-}
-
-.floating-hearts img:nth-child(24) {
-  left: 92%;
+  left: 87%;
+  top: 68%;
   animation-delay: 2s;
 }
 
-.floating-hearts img:nth-child(25) {
-  left: 35%;
-  animation-delay: 6s;
+.floating-hearts img:nth-child(21) {
+  left: 7%;
+  top: 80%;
+  animation-delay: 3s;
 }
 
-.floating-hearts img:nth-child(26) {
-  left: 65%;
+.floating-hearts img:nth-child(22) {
+  left: 90%;
+  top: 82%;
   animation-delay: 4s;
 }
 
-.floating-hearts img:nth-child(27) {
-  left: 50%;
+.floating-hearts img:nth-child(23) {
+  left: 4%;
+  top: 5%;
+  animation-delay: 5s;
+}
+
+.floating-hearts img:nth-child(24) {
+  left: 89%;
+  top: 5%;
+  animation-delay: 6s;
+}
+
+.floating-hearts img:nth-child(25) {
+  left: 5%;
+  top: 92%;
+  animation-delay: 7s;
+}
+
+.floating-hearts img:nth-child(26) {
+  left: 86%;
+  top: 94%;
   animation-delay: 8s;
+}
+
+.floating-hearts img:nth-child(27) {
+  left: 2%;
+  top: 48%;
+  animation-delay: 9s;
 }
 
 @keyframes floatingImage {
   0% {
-    bottom: -100px;
-    transform: rotate(0deg) scale(0.8);
+    transform: translateY(30px) rotate(-5deg) scale(0.85);
+    opacity: 0;
+  }
+
+  15% {
+    opacity: 1;
   }
 
   50% {
-    transform: rotate(10deg) scale(1);
+    transform: translateY(-20px) rotate(5deg) scale(1);
+  }
+
+  85% {
+    opacity: 1;
   }
 
   100% {
-    bottom: 110%;
-    transform: rotate(-10deg) scale(0.9);
+    transform: translateY(-50px) rotate(-5deg) scale(0.9);
+    opacity: 0;
   }
 }
