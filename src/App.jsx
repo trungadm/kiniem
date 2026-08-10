@@ -6,7 +6,7 @@ const memories = [
   {
     image: "/images/1.jpg",
     title: "Ngày đầu tiên",
-    note: "Ngày mà chúng ta bắt đầu có những kỷ niệm cùng nhau, ấy con gái đi chơi với bạn trai ngày đầu tiên mà không chỉnh trang lại gì hết ảo thật đấy, đã thế còn nắm nát ngón tay người ta, ta nói vừa đau vừa thích, cảm giác thật hồi hộp khó tả😳."
+    note: "Anh nên bắt đầu từ đâu đây nhỉ thôi thì từ ngày mà anh rủ em đi chơi nhé^^.Ngày mà chúng ta bắt đầu có những kỷ niệm cùng nhau, ấy con gái đi chơi với bạn trai ngày đầu tiên mà không chỉnh trang lại gì hết ảo thật đấy, đã thế còn nắm nát ngón tay người ta,em biết không lúc ấy anh không biết phải làm gì hết anh muốn nắm tay em, muốn cầm tay em rồi nói không sao có anh ở đây rồi, nhưng mà chả theo những gì anh nghĩ cả nhưng mà thế lại em nhỉ anh lại có cách khác che che che em bớt sợ chưa nè^^, ta nói vừa đau vừa thích, cảm giác thật hồi hộp khó tả😳."
   },
   {
     image: "/images/2.jpg",
@@ -91,7 +91,7 @@ const memories = [
     {
     image: "/images/14.jpg",
     title: "Vibe",
-    note: "đồ của em và anh mua xem khác nhau ra sau nhé,anh muốn thay đổi cho em một chút về cách ăn mặc, ý không phải chê đâu, đồ em mua chưa hợp với bông hoa đẹp nhất là em đâu,phải là anh khai phá cơ, yêu đúng người chưa^^"
+    note: "đồ của em và anh mua xem khác nhau ra sau nhé,anh muốn thay đổi cho em một chút về cách ăn mặc, ý không phải chê đâu, đồ em mua chưa hợp với bông hoa đẹp nhất là em đâu, cu citt đợi em không biết phối đồ gì cả thế mà đòi mua cho anh a haha nhưng mà anh thích, thảm hoạ thời trang mang tên nê nuỳ nang, phải là anh khai phá cơ, yêu đúng người chưa^^"
     },
      {
     image: "/images/15.jpg",
@@ -119,7 +119,7 @@ const memories = [
     note: "anh không làm được nữa em ơi, có lẽ anh chỉ làm được tới đây thôi còn nhiều lắm nhưng mà khi anh viết anh nhìn những tấm hình, kỉ niệm vui bên em anh không cầm được nước mắt của mình,em ơi là do anh yếu đuối hay do anh quá yêu em vậy ạ,buổi chiều hôm ấy em nói với anh mình không bên cạnh bên nhau nữa, anh như vỡ oà, anh hận em anh hận em tận xương tuỷ,em mang đến cho anh tình yêu mà anh chưa từng có, em nói yêu anh nhưng anh rời bỏ anh đi, em nói em có tình cảm với người khác anh càng hận em, tình cảm của em dễ dàng vậy sao, anh hận em lắm, anh muốn chôn vùi hết tất cả về em, anh ghét em,anh không làm được điều ấy em ơi sao anh phải chịu đau như vậy, anh cũng là một người bình thường thôi mà, thật may người đau khổ là anh, nếu như anh rời bỏ em như vậy anh đau lòng lắm,khi chúng ta khó khắn nhất chúng ta có nhau, khó khăn còn đấy nhưng em không còn đây, em đã rời bỏ anh,anh nói sẽ đợi em, nhưng mỗi đêm anh đều khóc nức nở như một đứa trẻ càng nhìn bim anh càng như vỡ oà anh không chịu nổi nữa em ơi, anh muốn em về bên anh, anh muốn em là tương lai của anh, anh không muốn mình là quá khứ của nhau càng không muốn em ở bên ai khác, anh không muốn em lại lặp lại sai lầm khi chọn một người bên cạnh nữa, anh không muốn"
          },
          {
-          title: "anh yêu em"
+          title: "anh yêu em, tạm biệt em"
          }
         
 
